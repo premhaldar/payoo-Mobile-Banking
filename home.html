@@ -15,22 +15,53 @@
     <main class="flex justify-center">
       <div class="mockup-phone border-primary">
         <div class="mockup-phone-camera"></div>
-        <div class="mockup-phone-display" style="background-color: blueviolet;">
-          <h1 style="color: beige;padding-left: 70px;padding-top: 200px;font-size: 50px; font-weight: bold;">Payoo MFS</h1>
-          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl" style="margin-top: 100px;">
+        <div class="mockup-phone-display" style="background-color: rgb(124, 186, 214)">
+          <section>
+             <h1
+            style="
+              color: beige;
+              padding-left: 70px;
+              padding-top: 100px;
+              font-size: 50px;
+              font-weight: bold;
+            "
+          >
+            Payoo MFS
+          </h1>
+          <!-- Amount part Start -->
+          <div class="stats shadow" style="background-color: bisque; margin-left: 100px;">
+            <div class="stat">
+              <div class="stat-title">Total Amount</div>
+              <div id="total-amount" class="stat-value">$4000</div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <!-- Amount part End-->
+          <!-- Button part Start-->
+          <section style="margin-left: 40px;">
+            <button class="btn btn-xl">Add Money</button>
+          <button class="btn btn-xl">Cash Out</button>
+          <div class="divider"></div>
+          <!-- Button part End-->
+          </section>
+          <!-- add money start -->
+           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl" style="background-color: slateblue;margin-left: 3px;">
             <div class="card-body">
               <fieldset class="fieldset">
-                <label class="label">Email</label>
-                <input type="email" class="input" placeholder="Email" />
-                <label class="label">Password</label>
-                <input type="password" class="input" placeholder="Password" />
-                <div><a class="link link-hover">Forgot password?</a></div>
-                <button class="btn btn-neutral mt-4">Login</button>
+                <label class="label">Add Money Amount</label>
+                <input id="add-amount" type="text" class="input" placeholder="Enter Your Amount" />
+                <label class="label">Pin</label>
+                <input id="enter-pin-number" type="password" class="input" placeholder="Enter Your Pin Number" />
+                <button id="btn-addMoney" class="btn btn-neutral mt-4" style="background-color: rgb(52, 9, 151);">Add Money</button>
               </fieldset>
             </div>
           </div>
+          <!-- add money end -->
+          </section>
+         
         </div>
       </div>
     </main>
+    <script src="js/addMoney.js"></script>
   </body>
 </html>
