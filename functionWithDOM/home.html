@@ -15,54 +15,118 @@
     <main class="flex justify-center">
       <div class="mockup-phone border-primary">
         <div class="mockup-phone-camera"></div>
-        <div class="mockup-phone-display" style="background-color: rgb(124, 186, 214)">
+        <div
+          class="mockup-phone-display"
+          style="background-color: rgb(124, 186, 214)"
+        >
           <section>
-             <h1
-            style="
-              color: beige;
-              padding-left: 70px;
-              padding-top: 100px;
-              font-size: 50px;
-              font-weight: bold;
-            "
-          >
-            Payoo MFS
-          </h1>
-          <!-- Amount part Start -->
-          <div class="stats shadow" style="background-color: bisque; margin-left: 100px;">
-            <div class="stat">
-              <div class="stat-title">Total Amount</div>
-              <div id="total-amount" class="stat-value">4000</div>
+            <h1
+              style="
+                color: beige;
+                padding-left: 70px;
+                padding-top: 100px;
+                font-size: 50px;
+                font-weight: bold;
+              "
+            >
+              Payoo MFS
+            </h1>
+            <!-- Amount part Start -->
+            <div
+              class="stats shadow"
+              style="background-color: bisque; margin-left: 100px"
+            >
+              <div class="stat">
+                <div class="stat-title">Total Amount</div>
+                <div id="total-amount" class="stat-value">4000</div>
+              </div>
             </div>
-          </div>
-          <div class="divider"></div>
-          <!-- Amount part End-->
-          <!-- Button part Start-->
-          <section style="margin-left: 40px;">
-            <button class="btn btn-xl">Add Money</button>
-          <button class="btn btn-xl">Cash Out</button>
-          <div class="divider"></div>
-          <!-- Button part End-->
-          </section>
-          <!-- add money start -->
-           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl" style="background-color: slateblue;margin-left: 3px;">
-            <div class="card-body">
-              <fieldset class="fieldset">
-                <label class="label">Add Money Amount</label>
-                <input id="add-amount" type="text" class="input" placeholder="Enter Your Amount" />
-                <label class="label">Pin</label>
-                <input id="enter-pin-number" type="password" class="input" placeholder="Enter Your Pin Number" />
-                <button id="btn-addMoney" class="btn btn-neutral mt-4" style="background-color: rgb(52, 9, 151);">Add Money</button>
-              </fieldset>
+            <div class="divider"></div>
+            <!-- Amount part End-->
+            <!-- Button part Start-->
+            <section class="text-center">
+              <button id="show-add-money" class="btn btn-xl">Add Money</button>
+              <button id="show-cash-out" class="btn btn-xl">Cash Out</button>
+              <button id="show-transaction" class="btn btn-xl">Transaction History</button>
+              <div class="divider"></div>
+            </section>
+            <!-- Button part End-->
+            <!-- add money start -->
+            <div id="add-money-form"
+              class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+              style="background-color: slateblue; margin-left: 3px"
+            >
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label">Add Money Amount</label>
+                  <input
+                    id="add-amount"
+                    type="text"
+                    class="input"
+                    placeholder="Enter Your Amount"
+                  />
+                  <label class="label">Pin</label>
+                  <input
+                    id="enter-pin-number"
+                    type="password"
+                    class="input"
+                    placeholder="Enter Your Pin Number"
+                  />
+                  <button
+                    id="btn-addMoney"
+                    class="btn btn-neutral mt-4"
+                    style="background-color: rgb(52, 9, 151)"
+                  >
+                    Add Money
+                  </button>
+                </fieldset>
+              </div>
             </div>
-          </div>
-          <!-- add money end -->
+            <!-- add money end -->
+            <!-- cash out start -->
+            <div id="cash-out-form"
+              class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+              style="background-color: slateblue; margin-left: 3px"
+            >
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label">Cash Out Amount</label>
+                  <input
+                    id="input-cash-out"
+                    type="text"
+                    class="input"
+                    placeholder="Enter Your Amount"
+                  />
+                  <label class="label">Pin</label>
+                  <input
+                    id="cash-out-pin-number"
+                    type="password"
+                    class="input"
+                    placeholder="Enter Your Pin Number"
+                  />
+                  <button
+                    id="btn-cash-out"
+                    class="btn btn-neutral mt-4"
+                    style="background-color: rgb(52, 9, 151)"
+                  >
+                    cash out
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+            <!-- cash out end -->
+            <!-- transaction start -->
+            <div id="transaction-form" class="hidden" >
+                <h1 class="text-3xl text-center">Transaction History</h1>
+            </div>
+            <!-- transaction end -->
           </section>
-         
         </div>
       </div>
     </main>
     <script src="js/utility.js"></script>
     <script src="js/addMoney.js"></script>
+    <script src="js/cashOut.js"></script>
+    <script src="js/featurs.js"></script>
   </body>
 </html>
