@@ -13,5 +13,5 @@ function showSectionById(id){
     document.getElementById('cash-out-form').classList.add('hidden');
     document.getElementById('transaction-form').classList.add('hidden');
 
-    document.getElementById(id).classList.remove('hidden')
+    document.getElementById(id).classList.remove('hidden');
 }
