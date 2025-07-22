@@ -2,6 +2,10 @@ document.getElementById('btn-addMoney').addEventListener('click',function(event)
     event.preventDefault();
     const addMoney=getInputFieldValueById('add-amount');
     const pinNumber=getInputFieldValueById('enter-pin-number');
+    if(isNaN(addMoney)){
+        alert('invalid amount');
+        return;
+    }
     if(pinNumber===1234){
         const totalAmount=getTextFieldValueById('total-amount');
         const finalTotalAmount=addMoney+totalAmount;
